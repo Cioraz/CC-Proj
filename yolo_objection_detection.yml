@@ -1,0 +1,12 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://localhost:8080
+functions:
+  yolo-function:
+    lang: python3
+    handler: yolo-function
+    image: yolo-function:latest
+    environment:
+      write_debug: true
+
